@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        img.img1 {
+            height: 50px;
+            margin-right: 40px;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 1%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.679);
+            padding: 20px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .overlay button {
+            background-color: #af2f64;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+
+        .courses-text {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .course-blocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .course {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .course img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .course h5.price {
+            color: #af2f64;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .contact-us {
+            background-color: #ffd700;
+            padding: 40px 20px;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 100px;
+        }
+
+        .contact-us h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .contact-us button {
+            background-color: #af2f64;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="content">
+                    <h2>
+                        <img class="img1" src="assets/logo.png" alt="Logo">
+                    </h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img class="background-image" src="assets/back.jpg" alt="Background Image">
+
+    <div class="overlay">
+        <h3>Improve your skills on your own to prepare for a better future </h3>
+        <button class="btn">Register Now</button>
+    </div>
+
+    <div class="courses-text">Discover our courses</div>
+
+    <div class="course-blocks">
+        <div class="course">
+            <img src="assets/Asset 7.png" alt="Course 1">
+            <h4>Spring Boot / Angular</h4>
+            <h5 class="price">350 DT / month</h5>
+        </div>
+
+        <div class="course">
+            <img src="assets/Asset 8.png" alt="Course 2">
+            <h4>Node js /React</h4>
+            <h5 class="price">350 DT / Month</h5>
+        </div>
+
+        <div class="course">
+            <img src="assets/Asset 9.png" alt="Course 3">
+            <h4>Flutter /Firebase</h4>
+            <h5 class="price">350 DT / Month</h5>
+        </div>
+
+        <div class="course">
+            <img src="assets/Asset 10.png" alt="Course 4">
+            <h4>Buisness Intelligence</h4>
+            <h5 class="price">350 DT / Month</h5>
+        </div>
+
+        <div class="course">
+            <img src="assets/Asset 11.png" alt="Course 5">
+            <h4>Artificial Intelligence</h4>
+            <h5 class="price">350 DT /month</h5>
+        </div>
+
+        <div class="course">
+            <img src="assets/Asset 12.png" alt="Course 6">
+            <h4>Devops</h4>
+            <h5 class="price">350 DT / Month</h5>
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Foulan El Foulani ">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Foulan@Email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+                </div>
+                <button class="btn">Send the message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
